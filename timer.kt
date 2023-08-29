@@ -23,7 +23,7 @@ class Timer @Inject constructor(@ApplicationContext context: Context) {
     private val minute: Long = 60_000L
     private val second: Long = 1_000L
 
-
+//Change the broadcast 
     private val notifyIntent = Intent(context , AlarmReceiver::class.java)
     private var prefs =
         context.getSharedPreferences("com.abdoali.timer" , Context.MODE_PRIVATE)
